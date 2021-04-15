@@ -1,0 +1,26 @@
+###
+
+GET http://localhost:3000/books
+
+###
+
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "isbn": "9781593275846",
+  "title": "Eloquent JavaScript, Second Edition",
+  "author": "Marijn Haverbeke"
+}
+
+###
+
+GET http://localhost:3000/books?title=JavaScript
+
+###
+
+GET http://localhost:3000/books?title=foo
+
+###
+
+DELETE http://localhost:3000/books/9781593275846
